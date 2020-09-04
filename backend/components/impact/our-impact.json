@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_impact_our_impacts",
+  "info": {
+    "name": "OurImpact",
+    "icon": "asterisk"
+  },
+  "options": {},
+  "attributes": {
+    "Data": {
+      "type": "string"
+    },
+    "DataSub": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_testimonials_testimonials",
+  "info": {
+    "name": "Testimonials",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "Testiminial": {
+      "type": "text",
+      "required": true
+    },
+    "Name": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

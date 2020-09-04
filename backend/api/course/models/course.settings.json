@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "courses",
+  "info": {
+    "name": "Course"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "richtext",
+      "required": true
+    },
+    "Banner": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "Date": {
+      "type": "datetime"
+    },
+    "Fee": {
+      "type": "integer",
+      "required": true
+    },
+    "Summary": {
+      "type": "text",
+      "maxLength": 400,
+      "required": true
+    },
+    "YoutubeVIdeoID": {
+      "type": "string",
+      "required": false
+    },
+    "RegistrationLink": {
+      "type": "string"
+    }
+  }
+}

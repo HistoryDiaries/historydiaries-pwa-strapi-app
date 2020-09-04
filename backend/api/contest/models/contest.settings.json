@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contests",
+  "info": {
+    "name": "Contest"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Summary": {
+      "type": "text",
+      "unique": false,
+      "required": true,
+      "maxLength": 393
+    },
+    "Description": {
+      "type": "richtext",
+      "required": true
+    },
+    "Fee": {
+      "type": "integer",
+      "required": true
+    },
+    "Date": {
+      "type": "datetime"
+    },
+    "Banner": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "YoutubeVideoID": {
+      "type": "string"
+    },
+    "RegistrationLink": {
+      "type": "string"
+    }
+  }
+}

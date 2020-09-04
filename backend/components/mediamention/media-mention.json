@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_mediamention_media_mentions",
+  "info": {
+    "name": "MediaMention",
+    "icon": "camera-retro"
+  },
+  "options": {},
+  "attributes": {
+    "MediaBanner": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

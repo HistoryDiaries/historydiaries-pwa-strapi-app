@@ -1,0 +1,53 @@
+{
+  "kind": "singleType",
+  "collectionName": "homes",
+  "info": {
+    "name": "Home"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "BannerHeading": {
+      "type": "text",
+      "maxLength": 200,
+      "required": true,
+      "default": "\"History Diaries\" is an initiative to revamp the current pedagogical system of history through theatre, classroom investigative sessions, tours, drama."
+    },
+    "Vision": {
+      "type": "text",
+      "required": false
+    },
+    "Mission": {
+      "type": "text",
+      "required": true
+    },
+    "OurStory": {
+      "type": "text",
+      "required": true
+    },
+    "OurTeam": {
+      "type": "component",
+      "repeatable": true,
+      "component": "team.our-team"
+    },
+    "OurImpact": {
+      "type": "component",
+      "repeatable": true,
+      "component": "impact.our-impact",
+      "max": 3,
+      "min": 1
+    },
+    "Testimonials": {
+      "type": "component",
+      "repeatable": true,
+      "component": "testimonials.testimonials"
+    },
+    "MediaMention": {
+      "type": "component",
+      "repeatable": true,
+      "component": "mediamention.media-mention"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "workshops",
+  "info": {
+    "name": "Workshop"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Summary": {
+      "type": "text",
+      "required": true,
+      "maxLength": 400
+    },
+    "Description": {
+      "type": "richtext",
+      "required": true
+    },
+    "Date": {
+      "type": "datetime",
+      "required": true
+    },
+    "Banner": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "Fee": {
+      "type": "integer"
+    },
+    "YoutubeVideoID": {
+      "type": "string"
+    },
+    "RegistrationLink": {
+      "type": "string"
+    }
+  }
+}

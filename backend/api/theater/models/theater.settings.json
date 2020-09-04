@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "theaters",
+  "info": {
+    "name": "Theater"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Summary": {
+      "type": "text",
+      "required": true,
+      "maxLength": 400
+    },
+    "Description": {
+      "type": "richtext",
+      "required": true
+    },
+    "Date": {
+      "type": "datetime"
+    },
+    "Fee": {
+      "type": "integer"
+    },
+    "Banner": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "YoutubeVideoID": {
+      "type": "string"
+    },
+    "RegistrationLink": {
+      "type": "string"
+    }
+  }
+}
