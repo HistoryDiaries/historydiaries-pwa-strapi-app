@@ -242,7 +242,7 @@ const Home = (props: Props) => {
             </div>
 
             <div className="data-cont">
-              <div className="data">25+</div>
+              <div className="data">150+</div>
               <div>
                 <p className="sub-data">Schools</p>
               </div>
