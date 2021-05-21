@@ -165,8 +165,8 @@ const Contact = (props: Props) => {
         <div className="center">
           <div className="contact">
             <img className="join-icon" src={Join} alt="join-icon" />
-            <p>E-mail: historydiaries2016@gmail.com </p>
-            <p>Phone: +91 95600 54260</p>
+            <p>E-mail: info@historydiaries.com </p>
+            <p>Phone: +91 95888 57614</p>
 
             {/* <div className="address center">
                 <div> Address here..</div>
