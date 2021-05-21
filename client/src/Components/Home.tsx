@@ -229,7 +229,7 @@ const Home = (props: Props) => {
           </div>
           <div className="data-row">
             <div className="data-cont">
-              <div className="data">4500+</div>
+              <div className="data">8000+</div>
               <div>
                 <p className="sub-data">Students</p>
               </div>
@@ -248,7 +248,7 @@ const Home = (props: Props) => {
               </div>
             </div>
             <div className="data-cont">
-              <div className="data">30+</div>
+              <div className="data">60+</div>
               <div>
                 <p className="sub-data">Events</p>
               </div>
